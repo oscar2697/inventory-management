@@ -16,9 +16,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 
-app.get('/hello', (req, res) => {
-    res.send('Hello World!')
-})
+app.use('/dashboard', dashboardRoutes)
 
 const port = process.env.PORT || 3000
 
