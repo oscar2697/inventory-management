@@ -4,6 +4,7 @@ import bodyParser from 'body-parser'
 import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
+import dashboardRoutes from './routes/dashboardRoutes'
 
 dotenv.config()
 const app = express()
