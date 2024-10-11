@@ -1,8 +1,10 @@
 import { ShoppingBag } from 'lucide-react';
 import { useGetDashboardMetricsQuery } from '../../state/api';
+import Rating from '../(components)/Rating';
 
 const CardPopularProducts = () => {
     const { data: DashboardMetrics, isLoading } = useGetDashboardMetricsQuery()
+
     return (
         <div className='row-span-3 xl:row-span-6 bg-white shadow-md rounded-xl pb-16'>
             {isLoading ? (
@@ -32,7 +34,7 @@ const CardPopularProducts = () => {
 
                                             <span className='mx-2'>|</span>
 
-                                            <div>rating</div>
+                                            <Rating rating={product.rating || 0} />
                                         </div>
                                     </div>
                                 </div>
