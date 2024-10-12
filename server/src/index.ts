@@ -5,6 +5,7 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 import dashboardRoutes from './routes/dashboardRoutes'
+import productsRoutes from './routes/productsRoutes'
 
 dotenv.config()
 const app = express()
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 
 app.use('/dashboard', dashboardRoutes)
+app.use('/products', productsRoutes)
 
 const port = process.env.PORT || 3000
 
