@@ -1,4 +1,4 @@
-Inventory Management Application
+##Inventory Management Application
 
 A robust inventory management application built using modern technologies, designed to efficiently handle inventory tracking, management, and reporting.
 
