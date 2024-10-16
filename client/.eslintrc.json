@@ -1,8 +1,8 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "no-console": "warn", // Muestra advertencias cuando se usa console.log
-    "react/react-in-jsx-scope": "off" // Desactiva la regla de React (Next.js maneja esto)
+    "no-console": "off", 
+    "react/react-in-jsx-scope": "off" 
   },
   "env": {
     "browser": true,
